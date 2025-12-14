@@ -27,6 +27,13 @@ a:hover { text-decoration: underline; }
   padding: 0 12px;
 }
 
+.profile{
+  width: 220px;
+  max-width: 60vw;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Header */
 header {
   border-bottom: 1px solid #e6e6e6;
