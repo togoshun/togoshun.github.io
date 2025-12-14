@@ -95,3 +95,18 @@ header {
   color: #555;
   word-break: break-word;
 }
+
+
+/* Footer */
+footer{
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 860px){
+  .lessons{ grid-template-columns: 1fr; }  /* スマホで縦並びに */
+  .top-wrapper{ padding-top: 42px; }
+}
