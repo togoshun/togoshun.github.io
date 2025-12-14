@@ -1,3 +1,151 @@
 .title {
   color: #02ccba;
 }
+
+/* ===== Base (readability first) ===== */
+:root{
+  --bg: #ffffff;
+  --text: #1f2328;
+  --muted: #5a6472;
+  --link: #0b57d0;
+  --card: #f6f7f9;
+  --border: rgba(0,0,0,0.08);
+}
+
+*{ box-sizing: border-box; }
+
+html{
+  font-size: 18px;             /* ← 16より少し大きくして読みやすく */
+  scroll-behavior: smooth;     /* #about などのスクロールを滑らかに */
+}
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;            /* ← ここが最重要 */
+}
+
+/* Layout */
+.container{
+  width: min(980px, 92vw);     /* ← 行が長すぎないように */
+  margin: 0 auto;
+}
+
+/* Header */
+header{
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.header-left .logo{
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+}
+
+.header-right{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-right a{
+  text-decoration: none;
+  color: var(--link);
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.header-right a:hover{
+  background: var(--card);
+}
+
+/* "CV" button */
+.header-right a.login{
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+/* Top */
+.top-wrapper{
+  padding: 56px 0 26px;
+}
+
+.top-wrapper h1{
+  margin: 0 0 10px;
+  font-size: 2.0rem;
+  line-height: 1.2;
+}
+
+.top-wrapper p{
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;             /* ← 1行の長さを制限 */
+}
+
+/* Sections */
+.lesson-wrapper,
+.message-wrapper{
+  padding: 26px 0;
+}
+
+.heading h2{
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+/* Research cards */
+.lessons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.lesson{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+}
+
+.lesson p{
+  margin: 0 0 8px;
+}
+
+.text-contents{
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Contact */
+.message-wrapper .heading h3{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  word-break: break-word;      /* メールが長くても崩れにくい */
+}
+
+a{ color: var(--link); }
+
+/* Footer */
+footer{
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 860px){
+  .lessons{ grid-template-columns: 1fr; }  /* スマホで縦並びに */
+  .top-wrapper{ padding-top: 42px; }
+}
