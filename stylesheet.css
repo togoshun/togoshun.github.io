@@ -87,6 +87,14 @@ header {
   color: #555;
 }
 
+.research-figure {
+  width: 100%;
+  max-width: 520px;   /* 図の最大幅 */
+  height: auto;
+  display: block;
+  margin: 10px 0 8px;
+}
+
 /* Contact */
 .message-wrapper h3 {
   margin: 0;
