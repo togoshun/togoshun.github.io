@@ -1,115 +1,90 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — PhD Student</title>
-  <meta name="description" content="Academic homepage of Your Name, PhD student. Research in hydrology / mathematical modeling." />
-  <style>
-    :root { --fg:#111; --muted:#555; --bg:#fff; --link:#0b57d0; --card:#f6f7f9; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-           color:var(--fg); background:var(--bg); line-height:1.6; }
-    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 18px; }
-    header { display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
-    .name { font-size: 28px; font-weight: 700; margin:0; }
-    .role { margin: 4px 0 0; color: var(--muted); }
-    nav a { margin-right: 14px; text-decoration:none; color:var(--link); }
-    nav a:last-child { margin-right:0; }
-    section { margin-top: 26px; padding: 18px; background: var(--card); border-radius: 14px; }
-    h2 { margin: 0 0 10px; font-size: 18px; }
-    ul { margin: 8px 0 0 20px; }
-    .small { color: var(--muted); font-size: 14px; }
-    .row { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    @media (max-width: 720px) { .row { grid-template-columns: 1fr; } }
-    a { color: var(--link); }
-    footer { margin-top: 20px; color: var(--muted); font-size: 13px; }
-    code { background: #fff; padding: 2px 6px; border-radius: 8px; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progate</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1 class="name">Your Name</h1>
-        <p class="role">PhD Student, Department / Graduate School, University</p>
-        <p class="small">
-          Email: <a href="mailto:you@example.com">you@example.com</a> ·
-          GitHub: <a href="https://github.com/yourid">yourid</a> ·
-          Google Scholar: <a href="https://scholar.google.com/">link</a> ·
-          ORCID: <a href="https://orcid.org/">0000-0000-0000-0000</a>
-        </p>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
       </div>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#talks">Talks</a>
-        <a href="#cv">CV</a>
-      </nav>
-    </header>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I study <strong>soil–water / groundwater processes</strong> using mathematical and numerical modeling
-        (e.g., nonlinear PDEs, stochastic formulations, and finite element/finite difference methods).
-      </p>
-      <p class="small">
-        Keywords: Richards equation · Boussinesq equation · SPDE · FEM · Julia
-      </p>
-    </section>
-
-    <div class="row">
-      <section id="research">
-        <h2>Research</h2>
-        <ul>
-          <li>Topic A: one-sentence description (what & why)</li>
-          <li>Topic B: one-sentence description</li>
-          <li>Topic C: one-sentence description</li>
-        </ul>
-        <p class="small">Selected code: <a href="https://github.com/yourid/yourrepo">yourrepo</a></p>
-      </section>
-
-      <section id="cv">
-        <h2>CV</h2>
-        <p>
-          <a href="assets/cv.pdf">Download CV (PDF)</a>
-        </p>
-        <p class="small">Last updated: 2025-12-14</p>
-      </section>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#">レッスン</a>
+        <a href="#">新規登録</a>
+        <a href="#" class="login">ログイン</a>
+      </div>
     </div>
-
-    <section id="publications">
-      <h2>Publications & Preprints</h2>
-      <ul>
-        <li>
-          <strong>Paper title</strong>, Authors, Journal (Year).
-          <a href="#">DOI</a> · <a href="#">PDF</a>
-        </li>
-        <li>
-          <strong>Preprint title</strong>, Authors (arXiv:xxxx.xxxxx, Year).
-          <a href="#">arXiv</a> · <a href="#">PDF</a>
-          <span class="small">(under review)</span>
-        </li>
-      </ul>
-    </section>
-
-    <section id="talks">
-      <h2>Talks & Posters</h2>
-      <ul>
-        <li>Conference, Title, City (Month Year) — poster/oral</li>
-      </ul>
-    </section>
-
-    <footer>
-      © <span id="y"></span> Your Name · Built with plain HTML ·
-      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
-    </footer>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
+      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+      <div class="btn-wrapper">
+        <a href="#" class="btn signup">新規登録はこちら</a>
+        <p>or</p>
+        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+      </div>
+    </div>
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <div class="lesson-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Learn Where to Get Started!</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/html.png">
+            <p>HTML & CSS</p>
+          </div>
+          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+            <p>jQuery</p>
+          </div>
+          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/ruby.png">
+            <p>Ruby</p>
+          </div>
+          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/php.png">
+            <p>PHP</p>
+          </div>
+          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+        <h3>Let's learn to code, learn to be creative!</h3>
+      </div>
+      <span class="btn message">さっそく開発する</span>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+      <p>Learn to Code, Learn to be Creative.</p>
+    </div>
+  </footer>
 </body>
 </html>
