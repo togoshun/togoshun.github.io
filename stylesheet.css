@@ -95,6 +95,11 @@ header {
   margin: 10px 0 8px;
 }
 
+.me {
+  text-decoration: underline;
+  text-underline-offset: 2px;   /* 下線を少し離す（読みやすい） */
+}
+
 /* Contact */
 .message-wrapper h3 {
   margin: 0;
