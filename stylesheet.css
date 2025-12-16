@@ -100,6 +100,10 @@ header {
   text-underline-offset: 2px;   /* 下線を少し離す（読みやすい） */
 }
 
+li {
+  margin-bottom: 8px;   /* ← ここが間隔 */
+}
+
 /* Contact */
 .message-wrapper h3 {
   margin: 0;
