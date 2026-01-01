@@ -95,6 +95,14 @@ header {
   margin: 10px 0 8px;
 }
 
+.research-figure2 {
+  width: 100%;
+  max-width: 680px;   /* 図の最大幅 */
+  height: auto;
+  display: block;
+  margin: 10px 0 8px;
+}
+
 .me {
   text-decoration: underline;
   text-underline-offset: 2px;   /* 下線を少し離す（読みやすい） */
