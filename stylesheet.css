@@ -113,17 +113,16 @@ header .container {
   font-size: 1.6rem;
 }
 
-/* Research blocks */
-.top-wrapper2 {
-  padding: 0 0;
-}
-  
+/* Research blocks */ 
 .lesson {
   margin-bottom: 16px;
 }
 
 .lesson p {
   margin: 0 0 6px;
+}
+
+.lesson h1 {
 }
 
 .text-contents {
