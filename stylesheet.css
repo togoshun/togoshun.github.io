@@ -45,15 +45,21 @@ header .container {
   align-items: center;
 }
 
+.header-left .logo {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.header-left a {
+  color: #222;
+}
+
+.header-left a:hover { text-decoration: none; }
+  
 .header-right {
   margin-left: auto;
   display: flex;
   align-items: center;
-}
-
-.header-left .logo {
-  margin: 0;
-  font-size: 1.1rem;
 }
 
 .header-right a {
