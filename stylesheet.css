@@ -42,6 +42,8 @@ header {
 
 .header-right {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header-left .logo {
