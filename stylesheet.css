@@ -40,6 +40,11 @@ header {
   padding: 12px 0;
 }
 
+header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-right {
   margin-left: auto;
   display: flex;
@@ -57,7 +62,7 @@ header {
 
 .nav-item {
   position: relative;
-  display: none;
+  display: inline-block;
 }
 
 .dropdown {
