@@ -136,7 +136,7 @@ header .container {
   height: auto;
   display: block;
   margin: 10px 0 8px;
-  background: #f4f4f4;
+  border: 1px solid #e6e6e6;
 }
 
 .research-figure2 {
