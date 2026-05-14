@@ -135,7 +135,7 @@ header .container {
   max-width: 520px;   /* 図の最大幅 */
   height: auto;
   display: block;
-  margin: 28px 0 8px;
+  margin: 40px 0 8px;
   border: 1px solid #e6e6e6;
 }
 
