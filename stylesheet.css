@@ -40,6 +40,10 @@ header {
   padding: 12px 0;
 }
 
+.header-right {
+  margin-left: auto;
+}
+
 .header-left .logo {
   margin: 0;
   font-size: 1.1rem;
