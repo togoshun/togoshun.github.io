@@ -49,6 +49,29 @@ header {
   margin-left: 14px;
 }
 
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 160px;
+}
+
+.dropdown a{
+  display: block;
+  padding: 8px 16px;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
 /* Sections */
 .top-wrapper,
 .lesson-wrapper,
