@@ -114,6 +114,10 @@ header .container {
 }
 
 /* Research blocks */
+.top-wrapper2 {
+  padding: 0 0;
+}
+  
 .lesson {
   margin-bottom: 16px;
 }
